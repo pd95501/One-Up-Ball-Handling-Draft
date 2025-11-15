@@ -86,7 +86,7 @@ export default function Home() {
           <figure className="hero__media" aria-label="Program preview">
             {/* Replace with your imagery when ready */}
             <img
-              src="https://placehold.co/640x400/png"
+              src="/images/One Up Main Photo.png"
               alt="Training program preview"
               width="640"
               height="400"
