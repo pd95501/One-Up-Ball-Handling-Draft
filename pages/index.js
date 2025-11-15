@@ -9,12 +9,19 @@ export default function Home() {
         <meta name="description" content="Online basketball training systems, drills, and workouts." />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
-        {/* Pull in our neon styles */}
         <link rel="stylesheet" href="/styles.css" />
       </Head>
 
       <header className="site-header container" role="banner">
         <a className="logo" href="/">One Up</a>
+
+        {/* Theme switcher */}
+        <div className="theme-switch">
+          <button data-theme-btn="light" className="chip">Light</button>
+          <button data-theme-btn="orange" className="chip">Orange</button>
+          <button data-theme-btn="dark" className="chip">Dark</button>
+        </div>
+
         <button className="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
         <nav id="site-nav" className="site-nav" aria-label="Primary">
           <a href="#programs">Programs</a>
@@ -43,14 +50,14 @@ export default function Home() {
           </div>
 
           <figure className="hero__media" aria-label="Program preview">
-            {/* Use your own image later; placeholder for now */}
+            {/* Replace with your imagery when ready */}
             <img src="https://placehold.co/640x400/png" alt="Training program preview" width="640" height="400" />
             <div className="orb orb--cyan" aria-hidden="true" />
             <div className="orb orb--violet" aria-hidden="true" />
           </figure>
         </section>
 
-        {/* TRUST/BRANDS */}
+        {/* TRUST */}
         <section className="container brands" aria-label="Trusted by">
           <p className="tiny">Trusted by players at</p>
           <ul>
@@ -77,7 +84,7 @@ export default function Home() {
             </article>
             <article className="card">
               <h3>Handles & First Step</h3>
-              <p className="muted">Ball control, change of pace, and explosive first move. </p>
+              <p className="muted">Ball control, change of pace, and explosive first move.</p>
               <a className="btn btn--block" href="#">Improve Handles</a>
             </article>
           </div>
@@ -136,7 +143,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* CONTACT (placeholder) */}
+        {/* CONTACT */}
         <section id="contact" className="container section contact">
           <header className="section__header">
             <h2>Get in touch</h2>
@@ -161,18 +168,31 @@ export default function Home() {
         <p className="tiny">© <span id="year"></span> One Up Basketball</p>
       </footer>
 
+      {/* tiny script for menu + theme toggle */}
       <script
         dangerouslySetInnerHTML={{
           __html: `
-          const btn = document.querySelector('.nav-toggle');
-          const nav = document.getElementById('site-nav');
-          btn?.addEventListener('click', () => {
-            const expanded = btn.getAttribute('aria-expanded') === 'true';
-            btn.setAttribute('aria-expanded', String(!expanded));
-            nav.classList.toggle('open');
-          });
-          document.getElementById('year').textContent = new Date().getFullYear();
-        `,
+            const btn = document.querySelector('.nav-toggle');
+            const nav = document.getElementById('site-nav');
+            btn?.addEventListener('click', () => {
+              const expanded = btn.getAttribute('aria-expanded') === 'true';
+              btn.setAttribute('aria-expanded', String(!expanded));
+              nav.classList.toggle('open');
+            });
+            document.getElementById('year').textContent = new Date().getFullYear();
+
+            const root = document.documentElement;
+            const saved = localStorage.getItem('theme') || 'light';
+            root.setAttribute('data-theme', saved);
+
+            document.querySelectorAll('[data-theme-btn]').forEach(el=>{
+              el.addEventListener('click', () => {
+                const t = el.getAttribute('data-theme-btn');
+                root.setAttribute('data-theme', t);
+                localStorage.setItem('theme', t);
+              });
+            });
+          `,
         }}
       />
     </>
