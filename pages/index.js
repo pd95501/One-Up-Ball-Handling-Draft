@@ -86,7 +86,7 @@ export default function Home() {
           <figure className="hero__media" aria-label="Program preview">
             {/* Replace with your imagery when ready */}
             <img
-              src="/images/One Up Basketball (AI EDITION) Home Page.png"
+              src="/images/One Up Basketball (AI EDITION) Home Page.v2.png"
               alt="Training program preview"
               width="640"
               height="400"
