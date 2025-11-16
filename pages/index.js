@@ -28,8 +28,6 @@ export default function Home() {
           One Up Basketball
         </a>
 
-        {/* (Theme switcher removed – we’re using light theme only) */}
-
         <button
           className="nav-toggle"
           aria-expanded="false"
@@ -40,9 +38,9 @@ export default function Home() {
         <nav id="site-nav" className="site-nav" aria-label="Primary">
           <a href="#workouts">Workouts</a>
           <a href="#benefits">Benefits</a>
-          <a href="#articles">Articles</a>
+          {/* You could add <a href="/progress">My Progress</a> later when ready */}
           <a href="#community" className="btn btn--sm">
-            Community
+            Upload
           </a>
         </nav>
       </header>
@@ -55,7 +53,7 @@ export default function Home() {
             <h1>
               Smarter Training.{' '}
               <span className="accent">Sharper Handles.</span>{' '}
-              <span className="glow">Next-Level Results.</span>
+              <span className="glow">Real Results.</span>
             </h1>
             <p className="lead">
               An AI system that turns your goals into hyper-specific
@@ -87,7 +85,34 @@ export default function Home() {
           </figure>
         </section>
 
-        {/* TESTIMONIALS (replaces TRUST section) */}
+        {/* TRAINER EXPLAINER VIDEO */}
+        <section
+          id="trainer-video"
+          className="container section"
+          aria-label="Elite Skills Trainer explains the AI program"
+        >
+          <header className="section__header">
+            <h2>Inside the One Up AI Ball-Handling System</h2>
+            <p className="muted">
+              Hear directly from an Elite Skills Trainer on how the AI program
+              works and how to get the most out of it.
+            </p>
+          </header>
+          <div className="video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/EXPLAINER_VIDEO_ID"
+              title="Elite Skills Trainer explaining the AI program"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            ></iframe>
+          </div>
+          <p className="tiny muted">
+            (Replace EXPLAINER_VIDEO_ID with your YouTube video ID when ready.)
+          </p>
+        </section>
+
+        {/* TESTIMONIALS */}
         <section
           id="testimonials"
           className="container section"
@@ -104,8 +129,6 @@ export default function Home() {
             <article className="card">
               <div className="video-wrapper">
                 <iframe
-                  width="100%"
-                  height="215"
                   src="https://www.youtube.com/embed/VIDEO_ID_1"
                   title="Athlete testimonial 1"
                   frameBorder="0"
@@ -122,8 +145,6 @@ export default function Home() {
             <article className="card">
               <div className="video-wrapper">
                 <iframe
-                  width="100%"
-                  height="215"
                   src="https://www.youtube.com/embed/VIDEO_ID_2"
                   title="Athlete testimonial 2"
                   frameBorder="0"
@@ -140,8 +161,6 @@ export default function Home() {
             <article className="card">
               <div className="video-wrapper">
                 <iframe
-                  width="100%"
-                  height="215"
                   src="https://www.youtube.com/embed/VIDEO_ID_3"
                   title="Athlete testimonial 3"
                   frameBorder="0"
@@ -157,7 +176,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* WORKOUTS (PROGRAMS) */}
+        {/* WORKOUTS */}
         <section id="workouts" className="container section">
           <header className="section__header">
             <h2>Online Ball-Handling System</h2>
@@ -199,7 +218,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* BENEFITS (FEATURES) */}
+        {/* BENEFITS */}
         <section id="benefits" className="container section features">
           <header className="section__header">
             <h2>Benefits</h2>
@@ -237,8 +256,8 @@ export default function Home() {
           <header className="section__header">
             <h2>How It Works</h2>
             <p className="muted">
-              A simple 5-step system built around your goals and real
-              progression.
+              A simple 5-step process so every workout is clear, targeted, and
+              backed by data.
             </p>
           </header>
           <div className="grid-3">
@@ -252,8 +271,8 @@ export default function Home() {
             <article className="card">
               <h3>2. Receive Specialized Workout</h3>
               <p>
-                Get an AI-tailored ball-handling workout that reflects your
-                goals, schedule, and court access.
+                Get an AI-tailored ball-handling workout that fits your goals,
+                schedule, and court access.
               </p>
             </article>
             <article className="card">
@@ -278,30 +297,16 @@ export default function Home() {
               </p>
             </article>
           </div>
-        </section>
 
-        {/* ARTICLES – link to real blog */}
-        <section id="articles" className="container section">
-          <header className="section__header">
-            <h2>Articles</h2>
-            <p className="muted">
-              Deep dives, drills, and breakdowns from the One Up Basketball
-              team.
-            </p>
-          </header>
+          {/* BEGIN TODAY BUTTON */}
           <div style={{ textAlign: 'center', marginTop: '1.5rem' }}>
-            <a
-              className="btn"
-              href="https://oneupbasketball.com/blog/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              View Latest Articles
+            <a className="btn" href="#workouts">
+              Begin Today
             </a>
           </div>
         </section>
 
-        {/* COMMUNITY / UPLOAD TRACKER (CONTACT) */}
+        {/* COMMUNITY / UPLOAD TRACKER */}
         <section id="community" className="container section contact">
           <header className="section__header">
             <h2>Upload Your Tracker</h2>
@@ -340,6 +345,67 @@ export default function Home() {
               Upload Tracker
             </button>
           </form>
+        </section>
+
+        {/* MORE BALL-HANDLING VIDEOS (moved to bottom) */}
+        <section
+          id="more-videos"
+          className="container section"
+          aria-label="More ball-handling videos"
+        >
+          <header className="section__header">
+            <h2>More Ball-Handling Videos</h2>
+            <p className="muted">
+              Extra breakdowns, drills, and demos to keep your handle sharp.
+            </p>
+          </header>
+
+          <div className="grid-3">
+            <article className="card">
+              <div className="video-wrapper">
+                <iframe
+                  src="https://www.youtube.com/embed/VIDEO_ID_A"
+                  title="Ball-handling video 1"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                ></iframe>
+              </div>
+              <p className="muted tiny">
+                Placeholder ball-handling video — replace VIDEO_ID_A.
+              </p>
+            </article>
+
+            <article className="card">
+              <div className="video-wrapper">
+                <iframe
+                  src="https://www.youtube.com/embed/VIDEO_ID_B"
+                  title="Ball-handling video 2"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                ></iframe>
+              </div>
+              <p className="muted tiny">
+                Placeholder ball-handling video — replace VIDEO_ID_B.
+              </p>
+            </article>
+
+            <article className="card">
+              <div className="video-wrapper">
+                <iframe
+                  src="https://www.youtube.com/embed/VIDEO_ID_C"
+                  title="Ball-handling video 3"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                ></iframe>
+              </div>
+              <p className="muted tiny">
+                Placeholder ball-handling video — replace VIDEO_ID_C.
+              </p>
+            </article>
+          </div>
         </section>
       </main>
 
