@@ -398,3 +398,54 @@ body{
 
   .grid-3{grid-template-columns:1fr}
 }
+
+/* ============================================================
+   PROGRESS PAGE
+   ============================================================ */
+.progress-summary{
+  display:grid;
+  gap:1.2rem;
+  grid-template-columns:repeat(3, minmax(0,1fr));
+}
+
+.progress-value{
+  font-size:1.6rem;
+  font-weight:800;
+  margin:.25rem 0;
+}
+
+.progress-list{
+  display:grid;
+  gap:1rem;
+}
+
+.progress-item__top{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:1rem;
+}
+
+.progress-tag{
+  padding:.25rem .6rem;
+  border-radius:999px;
+  font-size:.8rem;
+  background:rgba(255,122,0,.1);
+  color:#b45a00;
+}
+
+:root[data-theme="dark"] .progress-tag{
+  background:rgba(0,229,255,.12);
+  color:#8af3ff;
+}
+
+.progress-notes{
+  margin-top:.5rem;
+}
+
+/* mobile tweak */
+@media (max-width:900px){
+  .progress-summary{
+    grid-template-columns:1fr;
+  }
+}
