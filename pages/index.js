@@ -48,11 +48,10 @@ export default function Home() {
           Menu
         </button>
         <nav id="site-nav" className="site-nav" aria-label="Primary">
-          <a href="#programs">Programs</a>
-          <a href="#features">Features</a>
-          <a href="#articles">Articles</a>
+          <a href="#programs">Workouts</a>
+          <a href="#features">Benefits</a>
           <a href="#contact" className="btn btn--sm">
-            Get Started
+            Contact Us
           </a>
         </nav>
       </header>
