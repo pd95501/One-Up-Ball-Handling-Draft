@@ -38,7 +38,7 @@ export default function Home() {
         <nav id="site-nav" className="site-nav" aria-label="Primary">
           <a href="#workouts">Workouts</a>
           <a href="#benefits">Benefits</a>
-          {/* You could add <a href="/progress">My Progress</a> later when ready */}
+          {/* Add <a href="/progress">My Progress</a> later when wired to real data */}
           <a href="#community" className="btn btn--sm">
             Upload
           </a>
@@ -51,8 +51,8 @@ export default function Home() {
           <div className="hero__text">
             <p className="pretitle">AI-Enhanced Training</p>
             <h1>
-              Smarter Training.{' '}
-              <span className="accent">Sharper Handles.</span>{' '}
+              Smarter Training.<br />
+              <span className="accent">Sharper Handles.</span><br />
               <span className="glow">Real Results.</span>
             </h1>
             <p className="lead">
@@ -98,15 +98,20 @@ export default function Home() {
               works and how to get the most out of it.
             </p>
           </header>
-          <div className="video-wrapper">
-            <iframe
-              src="https://www.youtube.com/embed/EXPLAINER_VIDEO_ID"
-              title="Elite Skills Trainer explaining the AI program"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-            ></iframe>
+
+          {/* Centered video */}
+          <div className="video-center">
+            <div className="video-wrapper">
+              <iframe
+                src="https://www.youtube.com/embed/EXPLAINER_VIDEO_ID"
+                title="Elite Skills Trainer explaining the AI program"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            </div>
           </div>
+
           <p className="tiny muted">
             (Replace EXPLAINER_VIDEO_ID with your YouTube video ID when ready.)
           </p>
@@ -347,7 +352,7 @@ export default function Home() {
           </form>
         </section>
 
-        {/* MORE BALL-HANDLING VIDEOS (moved to bottom) */}
+        {/* MORE BALL-HANDLING VIDEOS */}
         <section
           id="more-videos"
           className="container section"
