@@ -24,7 +24,7 @@ export default function Home() {
 
       <header className="site-header container" role="banner">
         <a className="logo" href="/">
-          One Up
+          One Up Basketball Training
         </a>
 
         {/* Theme switcher */}
