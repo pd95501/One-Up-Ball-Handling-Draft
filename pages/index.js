@@ -8,7 +8,7 @@ export default function Home() {
         <title>One Up Basketball — Train Smarter</title>
         <meta
           name="description"
-          content="Online basketball training systems, drills, and workouts."
+          content="AI-powered ball-handling system that turns your goals into hyper-specific workouts."
         />
         <link
           rel="preconnect"
@@ -22,23 +22,13 @@ export default function Home() {
         <link rel="stylesheet" href="/styles.css" />
       </Head>
 
+      {/* HEADER / NAV */}
       <header className="site-header container" role="banner">
         <a className="logo" href="/">
-          One Up Basketball Training
+          One Up Basketball
         </a>
 
-        {/* Theme switcher */}
-        <div className="theme-switch">
-          <button data-theme-btn="light" className="chip">
-            Light
-          </button>
-          <button data-theme-btn="orange" className="chip">
-            Orange
-          </button>
-          <button data-theme-btn="dark" className="chip">
-            Dark
-          </button>
-        </div>
+        {/* (Theme switcher removed – we’re using light theme only) */}
 
         <button
           className="nav-toggle"
@@ -48,10 +38,11 @@ export default function Home() {
           Menu
         </button>
         <nav id="site-nav" className="site-nav" aria-label="Primary">
-          <a href="#programs">Workouts</a>
-          <a href="#features">Benefits</a>
-          <a href="#contact" className="btn btn--sm">
-            Contact Us
+          <a href="#workouts">Workouts</a>
+          <a href="#benefits">Benefits</a>
+          <a href="#articles">Articles</a>
+          <a href="#community" className="btn btn--sm">
+            Community
           </a>
         </nav>
       </header>
@@ -62,31 +53,32 @@ export default function Home() {
           <div className="hero__text">
             <p className="pretitle">AI-Enhanced Training</p>
             <h1>
-              <span className="accent">Train smarter.</span> Shoot better.{' '}
-              <span className="glow">Score more.</span>
+              Smarter Training.{' '}
+              <span className="accent">Sharper Handles.</span>{' '}
+              <span className="glow">Next-Level Results.</span>
             </h1>
             <p className="lead">
-              A modern system for players who want real in-game results—built on
-              drills, data, and consistent coaching.
+              An AI system that turns your goals into hyper-specific
+              ball-handling workouts built for real improvement.
             </p>
             <div className="cta">
-              <a className="btn" href="#programs">
-                Explore Programs
+              <a className="btn" href="#workouts">
+                Workouts
               </a>
-              <a className="btn btn--ghost" href="#articles">
-                Read Articles
+              <a className="btn btn--ghost" href="#benefits">
+                Read Benefits
               </a>
             </div>
             <p className="tiny">
-              Free preview • Mobile-friendly workouts • No credit card
+              AI-customized workouts • Built for real results • Instant access
             </p>
           </div>
 
           <figure className="hero__media" aria-label="Program preview">
-            {/* Replace with your imagery when ready */}
+            {/* HERO IMAGE – uses your provided file name from /public/images */}
             <img
               src="/images/One Up Basketball (AI EDITION) Home Page.v2.png"
-              alt="Training program preview"
+              alt="One Up Basketball AI Edition home screen"
               width="640"
               height="400"
             />
@@ -95,184 +87,288 @@ export default function Home() {
           </figure>
         </section>
 
-        {/* TRUST */}
-        <section className="container brands" aria-label="Trusted by">
-          <p className="tiny">Trusted by players at</p>
-          <ul>
-            <li>High School Programs</li>
-            <li>AAU Teams</li>
-            <li>College Recruits</li>
-            <li>Coaches</li>
-          </ul>
+        {/* TESTIMONIALS (replaces TRUST section) */}
+        <section
+          id="testimonials"
+          className="container section"
+          aria-label="Testimonials"
+        >
+          <header className="section__header">
+            <h2>Testimonials</h2>
+            <p className="muted">
+              Hear from athletes using the One Up Basketball system.
+            </p>
+          </header>
+
+          <div className="grid-3">
+            <article className="card">
+              <div className="video-wrapper">
+                <iframe
+                  width="100%"
+                  height="215"
+                  src="https://www.youtube.com/embed/VIDEO_ID_1"
+                  title="Athlete testimonial 1"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                ></iframe>
+              </div>
+              <p className="muted tiny">
+                Placeholder testimonial video — replace VIDEO_ID_1 with your
+                YouTube link.
+              </p>
+            </article>
+
+            <article className="card">
+              <div className="video-wrapper">
+                <iframe
+                  width="100%"
+                  height="215"
+                  src="https://www.youtube.com/embed/VIDEO_ID_2"
+                  title="Athlete testimonial 2"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                ></iframe>
+              </div>
+              <p className="muted tiny">
+                Placeholder testimonial video — replace VIDEO_ID_2 with your
+                YouTube link.
+              </p>
+            </article>
+
+            <article className="card">
+              <div className="video-wrapper">
+                <iframe
+                  width="100%"
+                  height="215"
+                  src="https://www.youtube.com/embed/VIDEO_ID_3"
+                  title="Athlete testimonial 3"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                ></iframe>
+              </div>
+              <p className="muted tiny">
+                Placeholder testimonial video — replace VIDEO_ID_3 with your
+                YouTube link.
+              </p>
+            </article>
+          </div>
         </section>
 
-        {/* PROGRAMS */}
-        <section id="programs" className="container section">
+        {/* WORKOUTS (PROGRAMS) */}
+        <section id="workouts" className="container section">
           <header className="section__header">
-            <h2>Online Training Systems</h2>
+            <h2>Online Ball-Handling System</h2>
             <p className="muted">
-              Structured, progressive plans you can start today.
+              Ball-handling workouts you need to level up fast.
             </p>
           </header>
           <div className="grid-3">
             <article className="card">
-              <h3>27-Day Shooting System</h3>
+              <h3>30 Minute Workout</h3>
               <p className="muted">
-                Daily reps, form fixes, and tracking to increase your % from
-                anywhere on the floor.
+                High-intensity session you can plug in before or after practice
+                to sharpen your handle and decision-making.
               </p>
               <a className="btn btn--block" href="#">
-                Start Shooting
+                Unlock Workout
               </a>
             </article>
             <article className="card card--primary">
-              <h3>Scoring System</h3>
+              <h3>7 Day Workout</h3>
               <p className="muted">
-                Footwork, finishing, and reads to create separation and convert
-                at the rim.
+                One focused week of AI-guided drills to build confidence with
+                the ball under pressure.
               </p>
               <a className="btn btn--block" href="#">
-                Start Scoring
+                Start 7-Day Plan
               </a>
             </article>
             <article className="card">
-              <h3>Handles &amp; First Step</h3>
+              <h3>4 Week Workout</h3>
               <p className="muted">
-                Ball control, change of pace, and explosive first move.
+                A full month of progressive ball-handling, footwork, and change
+                of pace to transform your game.
               </p>
               <a className="btn btn--block" href="#">
-                Improve Handles
+                Begin 4-Week System
               </a>
             </article>
           </div>
         </section>
 
-        {/* FEATURES */}
-        <section id="features" className="container section features">
+        {/* BENEFITS (FEATURES) */}
+        <section id="benefits" className="container section features">
           <header className="section__header">
-            <h2>Why players level up</h2>
+            <h2>Benefits</h2>
             <p className="muted">
-              Short sessions • measurable progress • game-ready habits
+              No-Guess Workouts • Trackable Gains • Game-Ready Skills
             </p>
           </header>
           <div className="grid-3">
-            <article className="feature">
-              <div className="feature__icon" aria-hidden="true">
-                🏀
-              </div>
-              <h3>Game-speed drills</h3>
+            <article className="feature card">
+              <h3>AI-Tailored Workouts</h3>
               <p>
-                Built to transfer—footwork, timing, and reads that show up on
-                game night.
+                Smart, personalized ball-handling video drills built around your
+                goals, needs, and challenges.
               </p>
             </article>
-            <article className="feature">
-              <div className="feature__icon" aria-hidden="true">
-                📈
-              </div>
-              <h3>Track your reps</h3>
+            <article className="feature card">
+              <h3>Progress That Adapts</h3>
               <p>
-                Simple tracking so you can see makes, attempts, and streaks
-                improve.
+                Upload your tracker after each session and let AI monitor your
+                improvement—and adjust your plan automatically.
               </p>
             </article>
-            <article className="feature">
-              <div className="feature__icon" aria-hidden="true">
-                🎧
-              </div>
-              <h3>Coach in your pocket</h3>
+            <article className="feature card">
+              <h3>Guidance Anytime</h3>
               <p>
-                Clear videos and cues—no fluff. Train anywhere with your phone.
+                Have an Elite Skills Trainer in your pocket who you can message
+                directly for questions or feedback.
               </p>
             </article>
           </div>
         </section>
 
-        {/* ARTICLES (placeholder) */}
+        {/* HOW IT WORKS */}
+        <section id="how-it-works" className="container section">
+          <header className="section__header">
+            <h2>How It Works</h2>
+            <p className="muted">
+              A simple 5-step system built around your goals and real
+              progression.
+            </p>
+          </header>
+          <div className="grid-3">
+            <article className="card">
+              <h3>1. Complete Survey</h3>
+              <p>
+                Tell us your position, current level, strengths, weaknesses, and
+                goals so the AI and trainer know exactly where you&apos;re at.
+              </p>
+            </article>
+            <article className="card">
+              <h3>2. Receive Specialized Workout</h3>
+              <p>
+                Get an AI-tailored ball-handling workout that reflects your
+                goals, schedule, and court access.
+              </p>
+            </article>
+            <article className="card">
+              <h3>3. Complete Training</h3>
+              <p>
+                Follow the video drills, reps, and cues at game speed—no guess
+                work, no wasted time.
+              </p>
+            </article>
+            <article className="card">
+              <h3>4. Upload Tracker</h3>
+              <p>
+                After each session, upload your completed tracker so the system
+                can see your effort, reps, and results.
+              </p>
+            </article>
+            <article className="card">
+              <h3>5. Track Progress</h3>
+              <p>
+                Watch your trends over time and get updated workouts that match
+                how you&apos;re improving.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        {/* ARTICLES – link to real blog */}
         <section id="articles" className="container section">
           <header className="section__header">
-            <h2>Latest Articles</h2>
+            <h2>Articles</h2>
             <p className="muted">
-              Drills, workouts, and tips from our coaches.
+              Deep dives, drills, and breakdowns from the One Up Basketball
+              team.
             </p>
           </header>
-          <div className="grid-3">
-            <article className="post">
-              <div className="post__thumb"></div>
-              <h3>Form Fixes: Elbow In, Wrist Snap</h3>
-              <p className="muted">
-                3 quick cues that change your arc and accuracy.
-              </p>
-              <a className="btn btn--sm" href="#">
-                Read
-              </a>
-            </article>
-            <article className="post">
-              <div className="post__thumb"></div>
-              <h3>2-Dribble Pull-Up Timing</h3>
-              <p className="muted">
-                Footwork sequence for balance and rise.
-              </p>
-              <a className="btn btn--sm" href="#">
-                Read
-              </a>
-            </article>
-            <article className="post">
-              <div className="post__thumb"></div>
-              <h3>Beat The Hedge</h3>
-              <p className="muted">
-                Simple reads to punish hard hedges and switches.
-              </p>
-              <a className="btn btn--sm" href="#">
-                Read
-              </a>
-            </article>
+          <div style={{ textAlign: 'center', marginTop: '1.5rem' }}>
+            <a
+              className="btn"
+              href="https://oneupbasketball.com/blog/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View Latest Articles
+            </a>
           </div>
         </section>
 
-        {/* CONTACT */}
-        <section id="contact" className="container section contact">
+        {/* COMMUNITY / UPLOAD TRACKER (CONTACT) */}
+        <section id="community" className="container section contact">
           <header className="section__header">
-            <h2>Get in touch</h2>
-            <p className="muted">We usually reply within one business day.</p>
+            <h2>Upload Your Tracker</h2>
+            <p className="muted">
+              After each workout, upload your completed tracker so we can see
+              your progress and refine your plan.
+            </p>
           </header>
           <form className="contact-form" action="#" method="post">
             <label htmlFor="name">Name</label>
             <input id="name" name="name" required />
+
             <label htmlFor="email">Email</label>
             <input id="email" name="email" type="email" required />
-            <label htmlFor="msg">Message</label>
-            <textarea id="msg" name="message" rows="5" required />
+
+            <label htmlFor="workout">Which workout did you complete?</label>
+            <input
+              id="workout"
+              name="workout"
+              placeholder="30 Minute, 7 Day, or 4 Week"
+              required
+            />
+
+            <label htmlFor="file">Upload tracker file</label>
+            <input id="file" name="file" type="file" />
+
+            <label htmlFor="notes">Notes (optional)</label>
+            <textarea
+              id="notes"
+              name="notes"
+              rows={4}
+              placeholder="Anything you want your trainer or AI to know?"
+            />
+
             <button className="btn" type="submit">
-              Send
+              Upload Tracker
             </button>
           </form>
         </section>
       </main>
 
+      {/* FOOTER */}
       <footer className="site-footer container" role="contentinfo">
         <nav aria-label="Footer">
-          <a href="#">Privacy</a>
-          <a href="#">Terms</a>
-          <a href="#contact">Contact</a>
+          <a href="#workouts">Workouts</a>
+          <a href="#benefits">Benefits</a>
+          <a href="#community">Community</a>
         </nav>
         <p className="tiny">
           © <span id="year"></span> One Up Basketball
         </p>
       </footer>
 
-      {/* tiny script for menu + theme toggle */}
+      {/* script: mobile nav, footer year, force light theme */}
       <script
         dangerouslySetInnerHTML={{
           __html: `
-            // mobile nav
+            // mobile nav toggle
             const btn = document.querySelector('.nav-toggle');
             const nav = document.getElementById('site-nav');
-            btn?.addEventListener('click', () => {
-              const expanded = btn.getAttribute('aria-expanded') === 'true';
-              btn.setAttribute('aria-expanded', String(!expanded));
-              nav.classList.toggle('open');
-            });
+            if (btn && nav) {
+              btn.addEventListener('click', () => {
+                const expanded = btn.getAttribute('aria-expanded') === 'true';
+                btn.setAttribute('aria-expanded', String(!expanded));
+                nav.classList.toggle('open');
+              });
+            }
 
             // footer year
             const yearEl = document.getElementById('year');
@@ -280,19 +376,9 @@ export default function Home() {
               yearEl.textContent = new Date().getFullYear();
             }
 
-            // theme init
+            // force light theme
             const root = document.documentElement;
-            const saved = localStorage.getItem('theme') || 'light';
-            root.setAttribute('data-theme', saved);
-
-            // theme switcher buttons
-            document.querySelectorAll('[data-theme-btn]').forEach(el => {
-              el.addEventListener('click', () => {
-                const t = el.getAttribute('data-theme-btn');
-                root.setAttribute('data-theme', t);
-                localStorage.setItem('theme', t);
-              });
-            });
+            root.setAttribute('data-theme', 'light');
           `,
         }}
       />
