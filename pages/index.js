@@ -369,7 +369,7 @@ export default function Home() {
             <article className="card">
               <div className="video-wrapper">
                 <iframe
-                  src="https://www.youtube.com/embed/VIDEO_ID_A"
+                  src="https://youtu.be/gVC4flFUVb8?si=TWkohPrrvDd4SpZj"
                   title="Ball-handling video 1"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
