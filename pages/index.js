@@ -369,8 +369,8 @@ export default function Home() {
             <article className="card">
               <div className="video-wrapper">
                 <iframe
-                  src="https://www.youtube.com/watch?v=gVC4flFUVb8&t=42s"
-                  title="Ball-handling video 1"
+                  src="https://www.youtube.com/embed/watch?v=gVC4flFUVb8&t=42s"
+                  title="The "Drag Dribble" Move For Elite Ball Handling!"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen
