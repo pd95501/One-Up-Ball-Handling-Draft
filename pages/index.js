@@ -377,7 +377,7 @@ export default function Home() {
                 ></iframe>
               </div>
               <p className="muted tiny">
-                Placeholder ball-handling video — replace VIDEO_ID_A.
+                12 Dribbling Drill Workout For Elite Handle.
               </p>
             </article>
 
