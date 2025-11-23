@@ -369,8 +369,8 @@ export default function Home() {
             <article className="card">
               <div className="video-wrapper">
                 <iframe
-                  src="https://www.youtube.com/embed/gVC4flFUVb8"
-                  title="The "Drag Dribble"Move For Elite Ball Handling!"
+                  src="https://www.youtube.com/embed/VIDEO_ID_A"
+                  title="Ball-handling video 1"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen
@@ -384,7 +384,7 @@ export default function Home() {
             <article className="card">
               <div className="video-wrapper">
                 <iframe
-                  src="https://www.youtube.com/embed/xtiLiYK3CcA"
+                  src="https://www.youtube.com/embed/VIDEO_ID_B"
                   title="Ball-handling video 2"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -399,8 +399,8 @@ export default function Home() {
             <article className="card">
               <div className="video-wrapper">
                 <iframe
-                  src="https://www.youtube.com/embed/ZayCmzGdZFY"
-                  title="How to Master the Allen Iverson Crossover Move in Just 5 Minutes!"
+                  src="https://www.youtube.com/embed/VIDEO_ID_C"
+                  title="Ball-handling video 3"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen
