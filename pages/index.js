@@ -370,7 +370,7 @@ export default function Home() {
               <div className="video-wrapper">
                 <iframe
                   src="https://www.youtube.com/embed/5XqHIyfH1QA"
-                  title="12 Dribbling Drill Workout For Elite Handle"
+                  title="12 Dribbling Drill Workout For Elite Handles"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen
@@ -392,7 +392,7 @@ export default function Home() {
                 ></iframe>
               </div>
               <p className="muted tiny">
-                Placeholder ball-handling video — replace VIDEO_ID_B.
+                The Drag Dribble Move For Elite Ball Handling.
               </p>
             </article>
 
@@ -407,7 +407,7 @@ export default function Home() {
                 ></iframe>
               </div>
               <p className="muted tiny">
-                Placeholder ball-handling video — replace VIDEO_ID_C.
+                In & Out Masterclass.
               </p>
             </article>
           </div>
