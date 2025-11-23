@@ -399,8 +399,8 @@ export default function Home() {
             <article className="card">
               <div className="video-wrapper">
                 <iframe
-                  src="https://www.youtube.com/embed/VIDEO_ID_C"
-                  title="Ball-handling video 3"
+                  src="https://www.youtube.com/embed/xtiLiYK3CcA"
+                  title="In & Out Masterclass: Footwork, Setup, & Drills To Create Space & Blow By Defenders"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen
