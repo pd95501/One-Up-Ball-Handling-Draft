@@ -370,7 +370,7 @@ export default function Home() {
               <div className="video-wrapper">
                 <iframe
                   src="https://www.youtube.com/embed/5XqHIyfH1QA"
-                  title="12 Dribbling Drill Workout For Elite Handl"
+                  title="12 Dribbling Drill Workout For Elite Handle"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen
@@ -384,8 +384,8 @@ export default function Home() {
             <article className="card">
               <div className="video-wrapper">
                 <iframe
-                  src="https://www.youtube.com/embed/VIDEO_ID_B"
-                  title="Ball-handling video 2"
+                  src="https://www.youtube.com/embed/gVC4flFUVb8"
+                  title="The Drag Dribble Move For Elite Ball Handling"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen
