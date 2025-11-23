@@ -369,8 +369,8 @@ export default function Home() {
             <article className="card">
               <div className="video-wrapper">
                 <iframe
-                  src="https://www.youtube.com/embed/VIDEO_ID_A"
-                  title="Ball-handling video 1"
+                  src="https://www.youtube.com/embed/5XqHIyfH1QA"
+                  title="12 Dribbling Drill Workout For Elite Handl"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen
