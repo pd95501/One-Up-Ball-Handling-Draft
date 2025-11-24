@@ -177,7 +177,7 @@ export default function workout() {
           </div>
         </section>
 
-        {/* WORKOUTS – ONLY FREE 30-MIN BUILDER */}
+        {/* WORKOUTS – ONLY FREE 30-MIN BUILDER (CENTERED) */}
         <section id="workouts" className="container section">
           <header className="section__header">
             <h2>Free 30-Minute Ball-Handling Builder</h2>
@@ -186,8 +186,9 @@ export default function workout() {
               ball-handling workout built for your game.
             </p>
           </header>
-          <div className="grid-3">
-            <article className="card card--primary">
+
+          <div className="builder-center">
+            <article className="card card--primary builder-card">
               <h3>30-Minute Workout (Free)</h3>
               <p className="muted">
                 Get a customized 30-minute ball-handling workout designed using
@@ -243,54 +244,39 @@ export default function workout() {
           </div>
         </section>
 
-        {/* HOW IT WORKS */}
+        {/* HOW IT WORKS – 3 STEPS */}
         <section id="how-it-works" className="container section">
           <header className="section__header">
             <h2>How to Use the Free 30-Min Builder</h2>
             <p className="muted">
-              Follow these steps to get the best results from your AI-powered
-              workout — no uploads and no videos, just drills.
+              Three simple steps to turn your info into a focused 30-minute
+              ball-handling session.
             </p>
           </header>
 
           <div className="grid-3">
             <article className="card">
-              <h3>1. Copy the Prompt</h3>
+              <h3>1. Copy the Builder Prompt</h3>
               <p>
-                Scroll down to the Builder Instructions (coming soon) or your
-                Skool interface to copy the AI prompt.
+                Grab the One Up AI builder prompt (from this page or your
+                One Up AI interface) and copy it into your chat.
               </p>
             </article>
 
             <article className="card">
-              <h3>2. Fill In Your Details</h3>
+              <h3>2. Add Your Details</h3>
               <p>
-                Replace the bracketed sections with your age, level, position,
-                weaknesses, goals, space, and equipment.
+                Fill in your age, level, position, weaknesses, goals, space, and
+                equipment so the workout is built around your real situation.
               </p>
             </article>
 
             <article className="card">
-              <h3>3. Paste Into the AI</h3>
+              <h3>3. Generate &amp; Train</h3>
               <p>
-                Paste the completed prompt into the One Up AI interface and send
-                it as a single message.
-              </p>
-            </article>
-
-            <article className="card">
-              <h3>4. Get Your 30-Min Workout</h3>
-              <p>
-                The AI returns one 30-minute ball-handling workout with clear
-                drills, reps, and timing — no video links or extra fluff.
-              </p>
-            </article>
-
-            <article className="card">
-              <h3>5. Train & Repeat</h3>
-              <p>
-                Run the workout at game speed. When you're ready for a new
-                focus, update your details and generate another session.
+                Send the prompt to the AI, get your 30-minute workout, then run
+                it at game speed. Repeat whenever you&apos;re ready for a new
+                focus.
               </p>
             </article>
           </div>
