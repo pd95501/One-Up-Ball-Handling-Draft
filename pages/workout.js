@@ -1,5 +1,5 @@
 import Head from 'next/head'
-export default function Freeworkouts() {
+export default function workout() {
   return (
     <>
       <Head>
