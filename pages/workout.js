@@ -3,7 +3,7 @@ export default function workout() {
   return (
     <>
       <Head>
-        <title>One Up Basketball — Free 10-Min Workout Builder</title>
+        <title>One Up Basketball — Free 30-Min Workout Builder</title>
         <meta
           name="description"
           content="Build a free 10-minute AI-powered ball-handling workout based on your goals using Coach Paris' curriculum."
