@@ -1,5 +1,6 @@
-// pages/workout.js
+// pages/index.js
 import Head from 'next/head'
+
 export default function Home() {
   return (
     <>
@@ -56,10 +57,7 @@ export default function Home() {
               <span className="glow">Real Results.</span>
             </h1>
             <p className="lead">
-              Gain access to 20+ years of One Up training experience with our
-              new One Up AI Ball Handling program that generates custom
-              10-minute ball-handling workouts based on your goals — completely
-              free.
+              Gain access to 20+ years of One Up training experience with our new One Up AI Ball Handling program that generates custom 10-minute ball-handling workouts based on your goals — completely free.
             </p>
             <div className="cta">
               <a className="btn" href="#workouts">
