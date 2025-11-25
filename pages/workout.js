@@ -8,7 +8,7 @@ export default function Workout() {
         <title>One Up Basketball — Free 10-Min Workout Builder</title>
         <meta
           name="description"
-          content="Build a free 10-minute AI-powered ball-handling workout based on your goals using Coach Paris' curriculum."
+          content="Build a free 10-minute AI-powered ball-handling workout based on your goals using an Elite Skills Trainer's' curriculum."
         />
         <link
           rel="preconnect"
